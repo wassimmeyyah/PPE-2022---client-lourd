@@ -71,14 +71,14 @@ namespace Client_lourd___2022
             if(btnEnregistrerPharmacie.Text == "Ajouter")
             {
                 Pharmacie pharma = new Pharmacie(txtCodePharmacie.Text.Trim(), txtVillePharmacie.Text.Trim(), txtAdressePharmacie.Text.Trim(), txtTelephonePharmacie.Text.Trim(), txtMailPharmacie.Text.Trim());
-                DB.AddPharmacie(pharma);
+                DB_Pharmacie.AddPharmacie(pharma);
                 Clear();
             }
 
             if (btnEnregistrerPharmacie.Text == "Mettre à jour")
             {
                 Pharmacie pharma = new Pharmacie(txtCodePharmacie.Text.Trim(), txtVillePharmacie.Text.Trim(), txtAdressePharmacie.Text.Trim(), txtTelephonePharmacie.Text.Trim(), txtMailPharmacie.Text.Trim());
-                DB.UpdatePharmacie(pharma, PHARMACode);
+                DB_Pharmacie.UpdatePharmacie(pharma, PHARMACode);
             }
             _parent.Display();
         }

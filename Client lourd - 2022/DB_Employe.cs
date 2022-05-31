@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Client_lourd___2022
 {
-    class DB
+    class DB_Employe
     {
         public static MySqlConnection GetConnection()
         {
@@ -19,30 +19,34 @@ namespace Client_lourd___2022
             try
             {
                 con.Open();
-            } catch (MySqlException ex)
+            }
+            catch (MySqlException ex)
             {
                 MessageBox.Show("MySQL Connection ! \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return con;
         }
 
-        public static void AddPharmacie(Pharmacie pharma)
+        public static void AddEmploye(Employe emp)
         {
-            string sql = "INSERT INTO pharmacie VALUES (@PHARMACode, @PHARMAVille, @PHARMAAdresse, @PHARMATelephone, @PHARMAMail)";
+            string sql = "INSERT INTO Employe VALUES (@EMPLOYCode, @EMPLOYNom, @EMPLOYPoste, @EMPLOYMail, @EMPLOYTelephone, @EMPLOYPharmacie)";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@PHARMACode", MySqlDbType.VarChar).Value = pharma.PHARMACode;
-            cmd.Parameters.Add("@PHARMAVille", MySqlDbType.VarChar).Value = pharma.PHARMAVille;
-            cmd.Parameters.Add("@PHARMAAdresse", MySqlDbType.VarChar).Value = pharma.PHARMAAdresse;
-            cmd.Parameters.Add("@PHARMATelephone", MySqlDbType.VarChar).Value = pharma.PHARMATelephone;
-            cmd.Parameters.Add("@PHARMAMail", MySqlDbType.VarChar).Value = pharma.PHARMAMail;
+            cmd.Parameters.Add("@EMPLOYCode", MySqlDbType.VarChar).Value = emp.EMPLOYCode;
+            cmd.Parameters.Add("@EMPLOYNom", MySqlDbType.VarChar).Value = emp.EMPLOYNom;
+            cmd.Parameters.Add("@EMPLOYPoste", MySqlDbType.VarChar).Value = emp.EMPLOYPoste;
+            cmd.Parameters.Add("@EMPLOYMail", MySqlDbType.VarChar).Value = emp.EMPLOYMail;
+            cmd.Parameters.Add("@EMPLOYTelephone", MySqlDbType.VarChar).Value = emp.EMPLOYTelephone;
+            cmd.Parameters.Add("@EMPLOYPharmacie", MySqlDbType.VarChar).Value = emp.EMPLOYPharmacie;
+
 
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Pharmacie ajoutée avec succès !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            } catch (MySqlException ex)
+                MessageBox.Show("Employé ajouté avec succès !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (MySqlException ex)
             {
                 MessageBox.Show("Echec de l'ajout ... \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -51,22 +55,23 @@ namespace Client_lourd___2022
 
 
 
-        public static void UpdatePharmacie(Pharmacie pharma, string id)
+        public static void UpdateEmploye(Employe emp, string id)
         {
-            string sql = "UPDATE pharmacie SET PHARMAVille = @PHARMAVille, PHARMAAdresse = @PHARMAAdresse, PHARMATelephone = @PHARMATelephone, PHARMAMail = @PHARMAMail WHERE PHARMACode = @PHARMACode";
+            string sql = "UPDATE Employe SET EMPLOYNom = @EMPLOYNom, EMPLOYPoste = @EMPLOYPoste, EMPLOYMail = @EMPLOYMail, EMPLOYTelephone = @EMPLOYTelephone, EMPLOYPharmacie = @EMPLOYPharmacie WHERE EMPLOYCode = @EMPLOYCode";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@PHARMACode", MySqlDbType.VarChar).Value = pharma.PHARMACode;
-            cmd.Parameters.Add("@PHARMAVille", MySqlDbType.VarChar).Value = pharma.PHARMAVille;
-            cmd.Parameters.Add("@PHARMAAdresse", MySqlDbType.VarChar).Value = pharma.PHARMAAdresse;
-            cmd.Parameters.Add("@PHARMATelephone", MySqlDbType.VarChar).Value = pharma.PHARMATelephone;
-            cmd.Parameters.Add("@PHARMAMail", MySqlDbType.VarChar).Value = pharma.PHARMAMail;
+            cmd.Parameters.Add("@EMPLOYCode", MySqlDbType.VarChar).Value = emp.EMPLOYCode;
+            cmd.Parameters.Add("@EMPLOYNom", MySqlDbType.VarChar).Value = emp.EMPLOYNom;
+            cmd.Parameters.Add("@EMPLOYPoste", MySqlDbType.VarChar).Value = emp.EMPLOYPoste;
+            cmd.Parameters.Add("@EMPLOYMail", MySqlDbType.VarChar).Value = emp.EMPLOYMail;
+            cmd.Parameters.Add("@EMPLOYTelephone", MySqlDbType.VarChar).Value = emp.EMPLOYTelephone;
+            cmd.Parameters.Add("@EMPLOYPharmacie", MySqlDbType.VarChar).Value = emp.EMPLOYPharmacie;
 
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Pharmacie mise à jour avec succès !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Employé mis à jour avec succès !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (MySqlException ex)
             {
@@ -76,18 +81,18 @@ namespace Client_lourd___2022
             con.Close();
         }
 
-        public static void DeletePharmacie(string id)
+        public static void DeleteEmploye(string id)
         {
-            string sql = "DELETE FROM pharmacie WHERE PHARMACode = @PHARMACode";
+            string sql = "DELETE FROM Employe WHERE EMPLOYCode = @EMPLOYCode";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@PHARMACode", MySqlDbType.VarChar).Value = id;
-            
+            cmd.Parameters.Add("@EMPLOYCode", MySqlDbType.VarChar).Value = id;
+
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Pharmacie supprimée avec succès !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Employé supprimé avec succès !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (MySqlException ex)
             {

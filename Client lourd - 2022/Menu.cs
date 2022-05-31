@@ -29,9 +29,7 @@ namespace Client_lourd___2022
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-            pnlNav.Height = btnAccueil.Height;
-            pnlNav.Top = btnAccueil.Top;
-            pnlNav.Left = btnAccueil.Left;
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -52,6 +50,9 @@ namespace Client_lourd___2022
             pnlNav.Height = btnPharmacie.Height;
             pnlNav.Top = btnPharmacie.Top;
             btnPharmacie.BackColor = Color.FromArgb(46, 51, 73);
+            this.Hide();
+            FormPharmacie pharmacie = new FormPharmacie();
+            pharmacie.Show();
         }
 
         private void btnEmploye_Click(object sender, EventArgs e)
@@ -119,6 +120,13 @@ namespace Client_lourd___2022
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnEmploye_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormEmploye employe = new FormEmploye();
+            employe.Show();
         }
     }
 }

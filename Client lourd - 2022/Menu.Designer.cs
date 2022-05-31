@@ -119,6 +119,7 @@ namespace Client_lourd___2022
             this.btnEmploye.Text = "Employés";
             this.btnEmploye.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnEmploye.UseVisualStyleBackColor = true;
+            this.btnEmploye.Click += new System.EventHandler(this.btnEmploye_Click_1);
             // 
             // btnPharmacie
             // 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 // Ajout la librairie MySQL
 using MySql.Data.MySqlClient;
@@ -15,12 +16,26 @@ namespace Client_lourd___2022
 {
     public partial class FormPharmacie : Form
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+
+        private static extern IntPtr CreateRoundRectRgn(
+            int nLeftRect,
+            int nTopRect,
+            int nRightRect,
+            int nBottomRect,
+            int nWidthEllipse,
+            int nHeightEllipse
+            );
+
+
         FormPharmacieAjout form;
 
         public FormPharmacie()
         {
             InitializeComponent();
             form = new FormPharmacieAjout(this);
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,7 +57,7 @@ namespace Client_lourd___2022
 
         public void Display()
         {
-            DB.DisplayAndSearch("SELECT PHARMACode, PHARMAVille, PHARMAAdresse, PHARMATelephone, PHARMAMail FROM pharmacie", dataGridViewPharmacie);
+            DB_Pharmacie.DisplayAndSearch("SELECT PHARMACode, PHARMAVille, PHARMAAdresse, PHARMATelephone, PHARMAMail FROM pharmacie", dataGridViewPharmacie);
         }
 
         private void btnAjouterPharmacie_Click(object sender, EventArgs e)
@@ -64,7 +79,7 @@ namespace Client_lourd___2022
 
         private void txtSearchPharmacie_TextChanged(object sender, EventArgs e)
         {
-            DB.DisplayAndSearch("SELECT PHARMACode, PHARMAVille, PHARMAAdresse, PHARMATelephone, PHARMAMail FROM pharmacie WHERE PHARMAVille LIKE '%" + txtSearchPharmacie.Text + "%'", dataGridViewPharmacie);
+            DB_Pharmacie.DisplayAndSearch("SELECT PHARMACode, PHARMAVille, PHARMAAdresse, PHARMATelephone, PHARMAMail FROM pharmacie WHERE PHARMAVille LIKE '%" + txtSearchPharmacie.Text + "%'", dataGridViewPharmacie);
 
         }
 
@@ -90,12 +105,31 @@ namespace Client_lourd___2022
             {
                 if (MessageBox.Show("Supprimer les informations de cette pharmacie ?", "Information", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
-                    DB.DeletePharmacie(dataGridViewPharmacie.Rows[e.RowIndex].Cells[2].Value.ToString());
+                    DB_Pharmacie.DeletePharmacie(dataGridViewPharmacie.Rows[e.RowIndex].Cells[2].Value.ToString());
                     Display();
                 }
                 return;
             }
 
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnEmploye_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormEmploye employe = new FormEmploye();
+            employe.Show();
+        }
+
+        private void btnAccueil_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
         }
     }
 }
