@@ -58,7 +58,7 @@ namespace Client_lourd___2022
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(207, 620);
+            this.panel1.Size = new System.Drawing.Size(207, 778);
             this.panel1.TabIndex = 3;
             // 
             // pnlNav
@@ -85,6 +85,7 @@ namespace Client_lourd___2022
             this.btnCommande.Text = "Commandes";
             this.btnCommande.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnCommande.UseVisualStyleBackColor = true;
+            this.btnCommande.Click += new System.EventHandler(this.btnCommande_Click_1);
             // 
             // btnProduit
             // 
@@ -102,6 +103,7 @@ namespace Client_lourd___2022
             this.btnProduit.Text = "Produits   ";
             this.btnProduit.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnProduit.UseVisualStyleBackColor = true;
+            this.btnProduit.Click += new System.EventHandler(this.btnProduit_Click_1);
             // 
             // btnEmploye
             // 
@@ -193,7 +195,7 @@ namespace Client_lourd___2022
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(918, 22);
+            this.btnClose.Location = new System.Drawing.Point(1411, 12);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(35, 35);
             this.btnClose.TabIndex = 4;
@@ -206,7 +208,7 @@ namespace Client_lourd___2022
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(976, 620);
+            this.ClientSize = new System.Drawing.Size(1458, 778);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -128,5 +128,19 @@ namespace Client_lourd___2022
             FormEmploye employe = new FormEmploye();
             employe.Show();
         }
+
+        private void btnProduit_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormProduit produit = new FormProduit();
+            produit.Show();
+        }
+
+        private void btnCommande_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormCommande commande = new FormCommande();
+            commande.Show();
+        }
     }
 }

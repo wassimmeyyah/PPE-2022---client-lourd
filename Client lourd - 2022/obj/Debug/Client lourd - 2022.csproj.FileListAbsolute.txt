@@ -32,8 +32,9 @@ C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\bin\Debug\Sy
 C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client_lourd___2022.Login.resources
-C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client_lourd___2022.MDIParent1.resources
 C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client_lourd___2022.Register.resources
 C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client_lourd___2022.Menu.resources
 C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client lourd - 2022.csprojAssemblyReference.cache
 C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client_lourd___2022.FormEmploye.resources
+C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client_lourd___2022.FormProduit.resources
+C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client_lourd___2022.FormCommande.resources

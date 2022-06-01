@@ -89,9 +89,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commande.cs" />
+    <Compile Include="DB_Commande.cs" />
     <Compile Include="DB_Employe.cs" />
     <Compile Include="DB_Pharmacie.cs" />
+    <Compile Include="DB_Produit.cs" />
     <Compile Include="Employe.cs" />
+    <Compile Include="FormCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCommande.Designer.cs">
+      <DependentUpon>FormCommande.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEmploye.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,17 +119,17 @@
     <Compile Include="FormPharmacieAjout.Designer.cs">
       <DependentUpon>FormPharmacieAjout.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduit.Designer.cs">
+      <DependentUpon>FormProduit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MDIParent1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MDIParent1.Designer.cs">
-      <DependentUpon>MDIParent1.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -139,6 +148,9 @@
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <Compile Include="Securite.cs" />
+    <EmbeddedResource Include="FormCommande.resx">
+      <DependentUpon>FormCommande.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEmploye.resx">
       <DependentUpon>FormEmploye.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,11 +160,11 @@
     <EmbeddedResource Include="FormPharmacieAjout.resx">
       <DependentUpon>FormPharmacieAjout.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormProduit.resx">
+      <DependentUpon>FormProduit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MDIParent1.resx">
-      <DependentUpon>MDIParent1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>

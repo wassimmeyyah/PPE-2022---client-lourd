@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace Client_lourd___2022
 {
-    public partial class MDIParent1 : Form
+    public partial class FormProduitAjout : Form
     {
-
-        public MDIParent1()
+        public FormProduitAjout()
         {
             InitializeComponent();
         }
-
-        private void formPharmacieToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormPharmacie ss = new FormPharmacie();
-            // ss.MdiParent = this;
-            ss.Show();
-        }
     }
-        
 }
