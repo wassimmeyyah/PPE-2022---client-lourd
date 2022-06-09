@@ -8,15 +8,15 @@ namespace Client_lourd___2022
 {
     class Commande
     {
-        public Commande(int COMRef, string COMDate, int UTILCode)
+        public Commande(string COMRef, string COMDate, string UTILCode)
         {
             this.COMRef = COMRef;
             this.COMDate = COMDate;
             this.UTILCode = UTILCode;
         }
 
-        public int COMRef { get; set; }
+        public string COMRef { get; set; }
         public string COMDate { get; set; }
-        public int UTILCode { get; set; }
+        public string UTILCode { get; set; }
     }
 }

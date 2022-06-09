@@ -29,11 +29,17 @@ namespace Client_lourd___2022
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnCommande = new System.Windows.Forms.Button();
+            this.btnProduit = new System.Windows.Forms.Button();
+            this.btnEmploye = new System.Windows.Forms.Button();
+            this.btnPharmacie = new System.Windows.Forms.Button();
+            this.btnAccueil = new System.Windows.Forms.Button();
             this.txtSearchEmploye = new System.Windows.Forms.TextBox();
             this.btnAjouterEmploye = new System.Windows.Forms.Button();
             this.dataGridViewEmploye = new System.Windows.Forms.DataGridView();
@@ -46,23 +52,17 @@ namespace Client_lourd___2022
             this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCommande = new System.Windows.Forms.Button();
-            this.btnProduit = new System.Windows.Forms.Button();
-            this.btnEmploye = new System.Windows.Forms.Button();
-            this.btnPharmacie = new System.Windows.Forms.Button();
-            this.btnAccueil = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmploye)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
@@ -86,6 +86,16 @@ namespace Client_lourd___2022
             this.label2.TabIndex = 1;
             this.label2.Text = "Utilisateur";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Client_lourd___2022.Properties.Resources.Untitled_11;
+            this.pictureBox2.Location = new System.Drawing.Point(72, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
@@ -98,202 +108,8 @@ namespace Client_lourd___2022
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 131);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(207, 647);
+            this.panel3.Size = new System.Drawing.Size(207, 669);
             this.panel3.TabIndex = 8;
-            // 
-            // txtSearchEmploye
-            // 
-            this.txtSearchEmploye.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearchEmploye.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSearchEmploye.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchEmploye.Location = new System.Drawing.Point(837, 44);
-            this.txtSearchEmploye.Name = "txtSearchEmploye";
-            this.txtSearchEmploye.Size = new System.Drawing.Size(296, 31);
-            this.txtSearchEmploye.TabIndex = 1;
-            this.txtSearchEmploye.TextChanged += new System.EventHandler(this.txtSearchEmploye_TextChanged);
-            // 
-            // btnAjouterEmploye
-            // 
-            this.btnAjouterEmploye.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
-            this.btnAjouterEmploye.FlatAppearance.BorderSize = 0;
-            this.btnAjouterEmploye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAjouterEmploye.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjouterEmploye.ForeColor = System.Drawing.Color.White;
-            this.btnAjouterEmploye.Location = new System.Drawing.Point(50, 31);
-            this.btnAjouterEmploye.Name = "btnAjouterEmploye";
-            this.btnAjouterEmploye.Size = new System.Drawing.Size(121, 44);
-            this.btnAjouterEmploye.TabIndex = 2;
-            this.btnAjouterEmploye.Text = "Ajouter";
-            this.btnAjouterEmploye.UseVisualStyleBackColor = false;
-            this.btnAjouterEmploye.Click += new System.EventHandler(this.btnAjouterPharmacie_Click);
-            // 
-            // dataGridViewEmploye
-            // 
-            this.dataGridViewEmploye.AllowUserToAddRows = false;
-            this.dataGridViewEmploye.AllowUserToDeleteRows = false;
-            this.dataGridViewEmploye.AllowUserToResizeColumns = false;
-            this.dataGridViewEmploye.AllowUserToResizeRows = false;
-            this.dataGridViewEmploye.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewEmploye.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewEmploye.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewEmploye.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewEmploye.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEmploye.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column8,
-            this.Column6,
-            this.Column7});
-            this.dataGridViewEmploye.GridColor = System.Drawing.Color.White;
-            this.dataGridViewEmploye.Location = new System.Drawing.Point(50, 101);
-            this.dataGridViewEmploye.MultiSelect = false;
-            this.dataGridViewEmploye.Name = "dataGridViewEmploye";
-            this.dataGridViewEmploye.ReadOnly = true;
-            this.dataGridViewEmploye.RowHeadersVisible = false;
-            this.dataGridViewEmploye.RowHeadersWidth = 62;
-            this.dataGridViewEmploye.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridViewEmploye.RowTemplate.Height = 28;
-            this.dataGridViewEmploye.ShowEditingIcon = false;
-            this.dataGridViewEmploye.Size = new System.Drawing.Size(1145, 472);
-            this.dataGridViewEmploye.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "EMPLOYCode";
-            this.Column1.HeaderText = "Code";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "EMPLOYNom";
-            this.Column2.HeaderText = "Nom";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "EMPLOYPoste";
-            this.Column3.HeaderText = "Poste";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "EMPLOYMail";
-            this.Column4.HeaderText = "Mail";
-            this.Column4.MinimumWidth = 8;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "EMPLOYTelephone";
-            this.Column5.HeaderText = "Telephone";
-            this.Column5.MinimumWidth = 8;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "EMPLOYPharmacie";
-            this.Column8.HeaderText = "Pharmacie";
-            this.Column8.MinimumWidth = 8;
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(88)))), ((int)(((byte)(96)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(88)))), ((int)(((byte)(96)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column6.HeaderText = "";
-            this.Column6.MinimumWidth = 8;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Text = "Editer";
-            this.Column6.UseColumnTextForButtonValue = true;
-            // 
-            // Column7
-            // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Column7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column7.HeaderText = "";
-            this.Column7.MinimumWidth = 8;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Text = "Supprimer";
-            this.Column7.UseColumnTextForButtonValue = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.dataGridViewEmploye);
-            this.panel2.Controls.Add(this.txtSearchEmploye);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.btnAjouterEmploye);
-            this.panel2.Location = new System.Drawing.Point(236, 153);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1210, 601);
-            this.panel2.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(45, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Les employés";
-            // 
-            // btnClose
-            // 
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1411, 12);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(35, 35);
-            this.btnClose.TabIndex = 6;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnClose);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1458, 131);
-            this.panel1.TabIndex = 7;
             // 
             // btnCommande
             // 
@@ -382,50 +198,236 @@ namespace Client_lourd___2022
             this.btnAccueil.UseVisualStyleBackColor = true;
             this.btnAccueil.Click += new System.EventHandler(this.btnAccueil_Click);
             // 
-            // pictureBox2
+            // txtSearchEmploye
             // 
-            this.pictureBox2.Image = global::Client_lourd___2022.Properties.Resources.Untitled_11;
-            this.pictureBox2.Location = new System.Drawing.Point(72, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 63);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.txtSearchEmploye.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearchEmploye.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearchEmploye.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchEmploye.Location = new System.Drawing.Point(676, 44);
+            this.txtSearchEmploye.Name = "txtSearchEmploye";
+            this.txtSearchEmploye.Size = new System.Drawing.Size(296, 31);
+            this.txtSearchEmploye.TabIndex = 1;
+            this.txtSearchEmploye.TextChanged += new System.EventHandler(this.txtSearchEmploye_TextChanged);
+            // 
+            // btnAjouterEmploye
+            // 
+            this.btnAjouterEmploye.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
+            this.btnAjouterEmploye.FlatAppearance.BorderSize = 0;
+            this.btnAjouterEmploye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjouterEmploye.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterEmploye.ForeColor = System.Drawing.Color.White;
+            this.btnAjouterEmploye.Location = new System.Drawing.Point(50, 31);
+            this.btnAjouterEmploye.Name = "btnAjouterEmploye";
+            this.btnAjouterEmploye.Size = new System.Drawing.Size(121, 44);
+            this.btnAjouterEmploye.TabIndex = 2;
+            this.btnAjouterEmploye.Text = "Ajouter";
+            this.btnAjouterEmploye.UseVisualStyleBackColor = false;
+            this.btnAjouterEmploye.Click += new System.EventHandler(this.btnAjouterPharmacie_Click);
+            // 
+            // dataGridViewEmploye
+            // 
+            this.dataGridViewEmploye.AllowUserToAddRows = false;
+            this.dataGridViewEmploye.AllowUserToDeleteRows = false;
+            this.dataGridViewEmploye.AllowUserToResizeColumns = false;
+            this.dataGridViewEmploye.AllowUserToResizeRows = false;
+            this.dataGridViewEmploye.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewEmploye.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewEmploye.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewEmploye.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewEmploye.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEmploye.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column8,
+            this.Column6,
+            this.Column7});
+            this.dataGridViewEmploye.GridColor = System.Drawing.Color.White;
+            this.dataGridViewEmploye.Location = new System.Drawing.Point(50, 101);
+            this.dataGridViewEmploye.MultiSelect = false;
+            this.dataGridViewEmploye.Name = "dataGridViewEmploye";
+            this.dataGridViewEmploye.ReadOnly = true;
+            this.dataGridViewEmploye.RowHeadersVisible = false;
+            this.dataGridViewEmploye.RowHeadersWidth = 62;
+            this.dataGridViewEmploye.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridViewEmploye.RowTemplate.Height = 28;
+            this.dataGridViewEmploye.ShowEditingIcon = false;
+            this.dataGridViewEmploye.Size = new System.Drawing.Size(984, 472);
+            this.dataGridViewEmploye.TabIndex = 0;
+            this.dataGridViewEmploye.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEmploye_CellClick);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "EMPLOYCode";
+            this.Column1.HeaderText = "Code";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "EMPLOYNom";
+            this.Column2.HeaderText = "Nom";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "EMPLOYPoste";
+            this.Column3.HeaderText = "Poste";
+            this.Column3.MinimumWidth = 8;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "EMPLOYMail";
+            this.Column4.HeaderText = "Mail";
+            this.Column4.MinimumWidth = 8;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "EMPLOYTelephone";
+            this.Column5.HeaderText = "Telephone";
+            this.Column5.MinimumWidth = 8;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "EMPLOYPharmacie";
+            this.Column8.HeaderText = "Pharmacie";
+            this.Column8.MinimumWidth = 8;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(88)))), ((int)(((byte)(96)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(88)))), ((int)(((byte)(96)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle11;
+            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column6.HeaderText = "";
+            this.Column6.MinimumWidth = 8;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Text = "Editer";
+            this.Column6.UseColumnTextForButtonValue = true;
+            // 
+            // Column7
+            // 
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle12;
+            this.Column7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column7.HeaderText = "";
+            this.Column7.MinimumWidth = 8;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Text = "Supprimer";
+            this.Column7.UseColumnTextForButtonValue = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.dataGridViewEmploye);
+            this.panel2.Controls.Add(this.txtSearchEmploye);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.btnAjouterEmploye);
+            this.panel2.Location = new System.Drawing.Point(236, 153);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1049, 601);
+            this.panel2.TabIndex = 6;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::Client_lourd___2022.Properties.Resources.icons8_chercher_30;
-            this.pictureBox1.Location = new System.Drawing.Point(1139, 44);
+            this.pictureBox1.Location = new System.Drawing.Point(978, 44);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(56, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(45, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(159, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Les employés";
+            // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(1235, 21);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(35, 35);
+            this.btnClose.TabIndex = 6;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnClose);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1311, 131);
+            this.panel1.TabIndex = 7;
+            // 
             // FormEmploye
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1458, 778);
+            this.ClientSize = new System.Drawing.Size(1311, 800);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormEmploye";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormEmploye";
             this.Shown += new System.EventHandler(this.FormEmploye_Shown_1);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmploye)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

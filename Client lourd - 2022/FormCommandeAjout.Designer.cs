@@ -32,7 +32,7 @@ namespace Client_lourd___2022
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbltext = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dateTimePickerCommande = new System.Windows.Forms.DateTimePicker();
+            this.txtDateCommande = new System.Windows.Forms.DateTimePicker();
             this.btnEnregistrerCommande = new System.Windows.Forms.Button();
             this.txtUtilCommande = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@ namespace Client_lourd___2022
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.dateTimePickerCommande);
+            this.panel2.Controls.Add(this.txtDateCommande);
             this.panel2.Controls.Add(this.btnEnregistrerCommande);
             this.panel2.Controls.Add(this.txtUtilCommande);
             this.panel2.Controls.Add(this.label3);
@@ -79,12 +79,12 @@ namespace Client_lourd___2022
             this.panel2.Size = new System.Drawing.Size(411, 537);
             this.panel2.TabIndex = 4;
             // 
-            // dateTimePickerCommande
+            // txtDateCommande
             // 
-            this.dateTimePickerCommande.Location = new System.Drawing.Point(51, 207);
-            this.dateTimePickerCommande.Name = "dateTimePickerCommande";
-            this.dateTimePickerCommande.Size = new System.Drawing.Size(279, 26);
-            this.dateTimePickerCommande.TabIndex = 8;
+            this.txtDateCommande.Location = new System.Drawing.Point(51, 207);
+            this.txtDateCommande.Name = "txtDateCommande";
+            this.txtDateCommande.Size = new System.Drawing.Size(279, 26);
+            this.txtDateCommande.TabIndex = 8;
             // 
             // btnEnregistrerCommande
             // 
@@ -99,6 +99,7 @@ namespace Client_lourd___2022
             this.btnEnregistrerCommande.TabIndex = 7;
             this.btnEnregistrerCommande.Text = "Ajouter";
             this.btnEnregistrerCommande.UseVisualStyleBackColor = false;
+            this.btnEnregistrerCommande.Click += new System.EventHandler(this.btnEnregistrerCommande_Click);
             // 
             // txtUtilCommande
             // 
@@ -114,9 +115,9 @@ namespace Client_lourd___2022
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(46, 284);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 25);
+            this.label3.Size = new System.Drawing.Size(104, 25);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Adresse :";
+            this.label3.Text = "Utilisateur : ";
             // 
             // label2
             // 
@@ -126,7 +127,7 @@ namespace Client_lourd___2022
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 25);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Ville : ";
+            this.label2.Text = "Date :";
             // 
             // txtRefCommande
             // 
@@ -168,7 +169,7 @@ namespace Client_lourd___2022
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbltext;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DateTimePicker dateTimePickerCommande;
+        private System.Windows.Forms.DateTimePicker txtDateCommande;
         private System.Windows.Forms.Button btnEnregistrerCommande;
         private System.Windows.Forms.TextBox txtUtilCommande;
         private System.Windows.Forms.Label label3;

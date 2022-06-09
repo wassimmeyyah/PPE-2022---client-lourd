@@ -8,15 +8,21 @@ namespace Client_lourd___2022
 {
     class Produit
     {
-        public Produit(int PRODRef, string PRODLibelle, float PRODPrixUnitaire)
+        public Produit(string PRODRef, string PRODLibelle, string PRODPrixUnitaire)
         {
             this.PRODRef = PRODRef;
             this.PRODLibelle = PRODLibelle;
             this.PRODPrixUnitaire = PRODPrixUnitaire;
         }
 
-        public int PRODRef { get; set; }
+        //public Produit(string PRODLibelle, float PRODPrixUnitaire)
+        //{
+        //    this.PRODLibelle = PRODLibelle;
+        //    this.PRODPrixUnitaire = PRODPrixUnitaire;
+        //}
+
+        public string PRODRef { get; set; }
         public string PRODLibelle { get; set; }
-        public float PRODPrixUnitaire { get; set; }
+        public string PRODPrixUnitaire { get; set; }
     }
 }

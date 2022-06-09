@@ -39,41 +39,35 @@ namespace Client_lourd___2022
 
         private void btnAccueil_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnAccueil.Height;
-            pnlNav.Top = btnAccueil.Top;
-            pnlNav.Left = btnAccueil.Left;
-            btnAccueil.BackColor = Color.FromArgb(46, 51, 73);
+           
         }
 
         private void btnPharmacie_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnPharmacie.Height;
-            pnlNav.Top = btnPharmacie.Top;
-            btnPharmacie.BackColor = Color.FromArgb(46, 51, 73);
             this.Hide();
-            FormPharmacie pharmacie = new FormPharmacie();
-            pharmacie.Show();
+            FormPharmacie pharma = new FormPharmacie();
+            pharma.Show();
         }
 
         private void btnEmploye_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnEmploye.Height;
-            pnlNav.Top = btnEmploye.Top;
-            btnEmploye.BackColor = Color.FromArgb(46, 51, 73);
+            this.Hide();
+            FormEmploye employe = new FormEmploye();
+            employe.Show();
         }
 
         private void btnProduit_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnProduit.Height;
-            pnlNav.Top = btnProduit.Top;
-            btnProduit.BackColor = Color.FromArgb(46, 51, 73);
+            this.Hide();
+            FormProduit produit = new FormProduit();
+            produit.Show();
         }
 
         private void btnCommande_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnCommande.Height;
-            pnlNav.Top = btnCommande.Top;
-            btnCommande.BackColor = Color.FromArgb(46, 51, 73);
+            this.Hide();
+            FormCommande commande = new FormCommande();
+            commande.Show();
         }
 
 
@@ -124,23 +118,17 @@ namespace Client_lourd___2022
 
         private void btnEmploye_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            FormEmploye employe = new FormEmploye();
-            employe.Show();
+            
         }
 
         private void btnProduit_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            FormProduit produit = new FormProduit();
-            produit.Show();
+            
         }
 
         private void btnCommande_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            FormCommande commande = new FormCommande();
-            commande.Show();
+            
         }
     }
 }

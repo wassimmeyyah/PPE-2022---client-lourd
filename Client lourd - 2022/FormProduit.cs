@@ -28,12 +28,12 @@ namespace Client_lourd___2022
             );
 
 
-        // FormProduitAjout form;
+        FormProduitAjout form;
 
         public FormProduit()
         {
             InitializeComponent();
-            // form = new FormProduitAjout(this);
+            form = new FormProduitAjout(this);
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
 
@@ -59,6 +59,18 @@ namespace Client_lourd___2022
 
         private void dataGridViewProduit_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.ColumnIndex == 0)
+            {
+                form.Clear();
+                form.PRODRef = dataGridViewProduit.Rows[e.RowIndex].Cells[2].Value.ToString();
+                form.PRODLibelle= dataGridViewProduit.Rows[e.RowIndex].Cells[3].Value.ToString();
+                form.PRODPrixUnitaire = dataGridViewProduit.Rows[e.RowIndex].Cells[4].Value.ToString();
+                form.UpdateProduit();
+                form.ShowDialog();
+                return;
+            }
+
+
             if (e.ColumnIndex == 1)
             {
                 if (MessageBox.Show("Supprimer les informations de cette pharmacie ?", "Information", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
@@ -68,6 +80,51 @@ namespace Client_lourd___2022
                 }
                 return;
             }
+        }
+
+        private void btnAjouterProduit_Click(object sender, EventArgs e)
+        {
+            form.Clear();
+            form.SaveProduit();
+            form.ShowDialog();
+        }
+
+        private void btnAccueil_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
+        }
+
+        private void btnPharmacie_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormPharmacie pharma = new FormPharmacie();
+            pharma.Show();
+        }
+
+        private void btnEmploye_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormEmploye employe = new FormEmploye();
+            employe.Show();
+        }
+
+        private void btnProduit_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnCommande_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormCommande commande = new FormCommande();
+            commande.Show();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 

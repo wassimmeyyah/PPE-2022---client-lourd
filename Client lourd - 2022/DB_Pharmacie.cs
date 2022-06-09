@@ -26,6 +26,7 @@ namespace Client_lourd___2022
             return con;
         }
 
+        // CREATE
         public static void AddPharmacie(Pharmacie pharma)
         {
             string sql = "INSERT INTO pharmacie VALUES (@PHARMACode, @PHARMAVille, @PHARMAAdresse, @PHARMATelephone, @PHARMAMail)";
@@ -50,7 +51,7 @@ namespace Client_lourd___2022
         }
 
 
-
+        // UPDATE
         public static void UpdatePharmacie(Pharmacie pharma, string id)
         {
             string sql = "UPDATE pharmacie SET PHARMAVille = @PHARMAVille, PHARMAAdresse = @PHARMAAdresse, PHARMATelephone = @PHARMATelephone, PHARMAMail = @PHARMAMail WHERE PHARMACode = @PHARMACode";
@@ -76,6 +77,7 @@ namespace Client_lourd___2022
             con.Close();
         }
 
+        // DELETE
         public static void DeletePharmacie(string id)
         {
             string sql = "DELETE FROM pharmacie WHERE PHARMACode = @PHARMACode";
@@ -96,6 +98,7 @@ namespace Client_lourd___2022
             con.Close();
         }
 
+        // READ ET SEARCH
         public static void DisplayAndSearch(string query, DataGridView dgv)
         {
             string sql = query;

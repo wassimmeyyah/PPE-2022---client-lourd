@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+using System.Text.RegularExpressions;
 
 namespace Client_lourd___2022
 {
@@ -53,28 +54,30 @@ namespace Client_lourd___2022
         {
             if (textBox2.Text == textBox3.Text)
             {
+                if (Regex.IsMatch(textBox2.Text, @"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$") && Regex.IsMatch(textBox1.Text, @"[a-z0-9]+@[a-z]+\.[a-z]{2,3}"))
+                {
+                    connexion.Open();
+                    MySqlCommand cmd = connexion.CreateCommand();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "INSERT INTO Login (Username, Password) VALUES (@username, @password)";
+                    cmd.Parameters.AddWithValue("@username", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@password", Securite.hashPassword(textBox2.Text));
+                    cmd.ExecuteNonQuery();
+                    connexion.Close();
 
-                connexion.Open();
-                MySqlCommand cmd = connexion.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "INSERT INTO Login (Username, Password) VALUES (@username, @password)";
-                cmd.Parameters.AddWithValue("@username", textBox1.Text);
-                cmd.Parameters.AddWithValue("@password", Securite.hashPassword(textBox2.Text));
-                cmd.ExecuteNonQuery();
-                connexion.Close();
-
-                this.Hide();
-                FormPharmacie fp = new FormPharmacie();
-                fp.Show();
-                
-
-            }
-            else
+                    this.Hide();
+                    FormPharmacie fp = new FormPharmacie();
+                    fp.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Merci de respecter le format de l'adresse mail et du mot de passe ...\n\n- 8 caractères minimum\n- Lettre\n- Caractère numérique");
+                }
+            } else
             {
                 MessageBox.Show("Les mots de passe ne correspondent pas ...");
             }
             
-
         }
     }
 }

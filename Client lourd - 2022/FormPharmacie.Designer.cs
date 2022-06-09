@@ -29,8 +29,8 @@ namespace Client_lourd___2022
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
@@ -72,7 +72,7 @@ namespace Client_lourd___2022
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1458, 131);
+            this.panel1.Size = new System.Drawing.Size(1311, 131);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -92,7 +92,7 @@ namespace Client_lourd___2022
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1411, 12);
+            this.btnClose.Location = new System.Drawing.Point(1235, 21);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(35, 35);
             this.btnClose.TabIndex = 6;
@@ -109,7 +109,7 @@ namespace Client_lourd___2022
             this.panel2.Controls.Add(this.btnAjouterPharmacie);
             this.panel2.Location = new System.Drawing.Point(236, 153);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1210, 601);
+            this.panel2.Size = new System.Drawing.Size(1049, 601);
             this.panel2.TabIndex = 0;
             // 
             // dataGridViewPharmacie
@@ -143,7 +143,7 @@ namespace Client_lourd___2022
             this.dataGridViewPharmacie.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridViewPharmacie.RowTemplate.Height = 28;
             this.dataGridViewPharmacie.ShowEditingIcon = false;
-            this.dataGridViewPharmacie.Size = new System.Drawing.Size(1145, 472);
+            this.dataGridViewPharmacie.Size = new System.Drawing.Size(984, 472);
             this.dataGridViewPharmacie.TabIndex = 0;
             this.dataGridViewPharmacie.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPharmacie_CellClick);
             // 
@@ -189,13 +189,13 @@ namespace Client_lourd___2022
             // 
             // Column6
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(88)))), ((int)(((byte)(96)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(88)))), ((int)(((byte)(96)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(88)))), ((int)(((byte)(96)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(88)))), ((int)(((byte)(96)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column6.HeaderText = "";
             this.Column6.MinimumWidth = 8;
@@ -206,13 +206,13 @@ namespace Client_lourd___2022
             // 
             // Column7
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column7.HeaderText = "";
             this.Column7.MinimumWidth = 8;
@@ -226,7 +226,7 @@ namespace Client_lourd___2022
             this.txtSearchPharmacie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearchPharmacie.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearchPharmacie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchPharmacie.Location = new System.Drawing.Point(837, 44);
+            this.txtSearchPharmacie.Location = new System.Drawing.Point(676, 44);
             this.txtSearchPharmacie.Name = "txtSearchPharmacie";
             this.txtSearchPharmacie.Size = new System.Drawing.Size(296, 31);
             this.txtSearchPharmacie.TabIndex = 1;
@@ -237,7 +237,7 @@ namespace Client_lourd___2022
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::Client_lourd___2022.Properties.Resources.icons8_chercher_30;
-            this.pictureBox1.Location = new System.Drawing.Point(1139, 44);
+            this.pictureBox1.Location = new System.Drawing.Point(978, 44);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(56, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -271,7 +271,7 @@ namespace Client_lourd___2022
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 131);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(207, 647);
+            this.panel3.Size = new System.Drawing.Size(207, 669);
             this.panel3.TabIndex = 5;
             // 
             // btnCommande
@@ -290,6 +290,7 @@ namespace Client_lourd___2022
             this.btnCommande.Text = "Commandes";
             this.btnCommande.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnCommande.UseVisualStyleBackColor = true;
+            this.btnCommande.Click += new System.EventHandler(this.btnCommande_Click);
             // 
             // btnProduit
             // 
@@ -307,6 +308,7 @@ namespace Client_lourd___2022
             this.btnProduit.Text = "Produits   ";
             this.btnProduit.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnProduit.UseVisualStyleBackColor = true;
+            this.btnProduit.Click += new System.EventHandler(this.btnProduit_Click);
             // 
             // btnEmploye
             // 
@@ -342,6 +344,7 @@ namespace Client_lourd___2022
             this.btnPharmacie.Text = "Pharmacies";
             this.btnPharmacie.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnPharmacie.UseVisualStyleBackColor = true;
+            this.btnPharmacie.Click += new System.EventHandler(this.btnPharmacie_Click);
             // 
             // btnAccueil
             // 
@@ -396,7 +399,7 @@ namespace Client_lourd___2022
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1458, 778);
+            this.ClientSize = new System.Drawing.Size(1311, 800);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

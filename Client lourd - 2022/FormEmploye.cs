@@ -26,11 +26,12 @@ namespace Client_lourd___2022
             int nHeightEllipse
             );
 
+        FormEmployeAjout form;
 
         public FormEmploye()
         {
             InitializeComponent();
-            // form = new FormEmploye(this);
+            form = new FormEmployeAjout(this);
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
 
@@ -65,20 +66,9 @@ namespace Client_lourd___2022
 
         private void btnAjouterPharmacie_Click(object sender, EventArgs e)
         {
-            MySqlConnection connexion = new MySqlConnection("Server = localhost; User = root; Database = test; Port = 3306; Password = ; SSL Mode = None");
-
-
-            try
-            {
-                connexion.Open();
-                MessageBox.Show("Connexion établie");
-                connexion.Close();
-            }
-            catch (Exception ex)
-            {
-                connexion.Close();
-                MessageBox.Show(ex.Message);
-            }
+            form.Clear();
+            form.SaveEmploye();
+            form.ShowDialog();
         }
 
         private void FormEmploye_Shown_1(object sender, EventArgs e)
@@ -103,6 +93,54 @@ namespace Client_lourd___2022
             this.Hide();
             Menu menu = new Menu();
             menu.Show();
+        }
+
+        private void btnEmploye_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnProduit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormProduit produit = new FormProduit();
+            produit.Show();
+        }
+
+        private void btnCommande_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormCommande commande = new FormCommande();
+            commande.Show();
+        }
+
+        private void dataGridViewEmploye_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // BOUTON EDIT 
+            if (e.ColumnIndex == 0)
+            {
+                form.Clear();
+                form.EMPLOYCode = dataGridViewEmploye.Rows[e.RowIndex].Cells[2].Value.ToString();
+                form.EMPLOYNom= dataGridViewEmploye.Rows[e.RowIndex].Cells[3].Value.ToString();
+                form.EMPLOYPoste = dataGridViewEmploye.Rows[e.RowIndex].Cells[4].Value.ToString();
+                form.EMPLOYMail = dataGridViewEmploye.Rows[e.RowIndex].Cells[2].Value.ToString();
+                form.EMPLOYTelephone = dataGridViewEmploye.Rows[e.RowIndex].Cells[3].Value.ToString();
+                form.EMPLOYPharmacie = dataGridViewEmploye.Rows[e.RowIndex].Cells[4].Value.ToString();
+                form.UpdateEmploye();
+                form.ShowDialog();
+                return;
+            }
+
+            // BOUTON DELETE
+            if (e.ColumnIndex == 1)
+            {
+                if (MessageBox.Show("Supprimer les informations de cette pharmacie ?", "Information", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    DB_Employe.DeleteEmploye(dataGridViewEmploye.Rows[e.RowIndex].Cells[2].Value.ToString());
+                    Display();
+                }
+                return;
+            }
         }
     }
 }

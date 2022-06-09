@@ -101,11 +101,23 @@
     <Compile Include="FormCommande.Designer.cs">
       <DependentUpon>FormCommande.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCommandeAjout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCommandeAjout.Designer.cs">
+      <DependentUpon>FormCommandeAjout.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEmploye.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormEmploye.Designer.cs">
       <DependentUpon>FormEmploye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployeAjout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeAjout.Designer.cs">
+      <DependentUpon>FormEmployeAjout.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPharmacie.cs">
       <SubType>Form</SubType>
@@ -124,6 +136,12 @@
     </Compile>
     <Compile Include="FormProduit.Designer.cs">
       <DependentUpon>FormProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProduitAjout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduitAjout.Designer.cs">
+      <DependentUpon>FormProduitAjout.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -151,8 +169,14 @@
     <EmbeddedResource Include="FormCommande.resx">
       <DependentUpon>FormCommande.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCommandeAjout.resx">
+      <DependentUpon>FormCommandeAjout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEmploye.resx">
       <DependentUpon>FormEmploye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployeAjout.resx">
+      <DependentUpon>FormEmployeAjout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPharmacie.resx">
       <DependentUpon>FormPharmacie.cs</DependentUpon>
@@ -162,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormProduit.resx">
       <DependentUpon>FormProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduitAjout.resx">
+      <DependentUpon>FormProduitAjout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -220,6 +247,7 @@
     <Content Include="Resources\icons8-pharmacy-shop-30.png" />
     <Content Include="Resources\icons8-pharmacy-shop-301.png" />
     <Content Include="Resources\icons8-pilule-30.png" />
+    <None Include="Resources\logoGSB.png" />
     <Content Include="Resources\Untitled-11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -15,7 +15,7 @@ using MySql.Data.MySqlClient;
 namespace Client_lourd___2022
 {
     public partial class FormPharmacie : Form
-    {
+    {  
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
         private static extern IntPtr CreateRoundRectRgn(
@@ -113,9 +113,16 @@ namespace Client_lourd___2022
 
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnAccueil_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
+        }
+
+        private void btnPharmacie_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void btnEmploye_Click(object sender, EventArgs e)
@@ -125,11 +132,23 @@ namespace Client_lourd___2022
             employe.Show();
         }
 
-        private void btnAccueil_Click(object sender, EventArgs e)
+        private void btnProduit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Menu menu = new Menu();
-            menu.Show();
+            FormProduit produit = new FormProduit();
+            produit.Show();
+        }
+
+        private void btnCommande_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormCommande commande = new FormCommande();
+            commande.Show();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -33,9 +33,9 @@ namespace Client_lourd___2022
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@PRODRef", MySqlDbType.Int32).Value = prod.PRODRef;
+            cmd.Parameters.Add("@PRODRef", MySqlDbType.VarChar).Value = prod.PRODRef;
             cmd.Parameters.Add("@PRODLibelle", MySqlDbType.VarChar).Value = prod.PRODLibelle;
-            cmd.Parameters.Add("@PRODPrixUnitaire", MySqlDbType.Decimal).Value = prod.PRODPrixUnitaire;
+            cmd.Parameters.Add("@PRODPrixUnitaire", MySqlDbType.VarChar).Value = prod.PRODPrixUnitaire;
 
             try
             {
@@ -57,9 +57,9 @@ namespace Client_lourd___2022
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@PRODRef", MySqlDbType.Int32).Value = prod.PRODRef;
+            cmd.Parameters.Add("@PRODRef", MySqlDbType.VarChar).Value = prod.PRODRef;
             cmd.Parameters.Add("@PRODLibelle", MySqlDbType.VarChar).Value = prod.PRODLibelle;
-            cmd.Parameters.Add("@PRODPrixUnitaire", MySqlDbType.Decimal).Value = prod.PRODPrixUnitaire;
+            cmd.Parameters.Add("@PRODPrixUnitaire", MySqlDbType.VarChar).Value = prod.PRODPrixUnitaire;
 
             try
             {
@@ -80,7 +80,7 @@ namespace Client_lourd___2022
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@PRODRef", MySqlDbType.Int32).Value = id;
+            cmd.Parameters.Add("@PRODRef", MySqlDbType.VarChar).Value = id;
 
             try
             {

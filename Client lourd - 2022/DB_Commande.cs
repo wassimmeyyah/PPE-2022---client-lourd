@@ -33,9 +33,9 @@ namespace Client_lourd___2022
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@COMRef", MySqlDbType.Int32).Value = com.COMRef;
+            cmd.Parameters.Add("@COMRef", MySqlDbType.VarChar).Value = com.COMRef;
             cmd.Parameters.Add("@COMDate", MySqlDbType.VarChar).Value = com.COMDate;
-            cmd.Parameters.Add("@UTILCode", MySqlDbType.Int32).Value = com.UTILCode;
+            cmd.Parameters.Add("@UTILCode", MySqlDbType.VarChar).Value = com.UTILCode;
 
             try
             {
@@ -57,9 +57,9 @@ namespace Client_lourd___2022
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@COMRef", MySqlDbType.Int32).Value = com.COMRef;
+            cmd.Parameters.Add("@COMRef", MySqlDbType.VarChar).Value = com.COMRef;
             cmd.Parameters.Add("@COMDate", MySqlDbType.VarChar).Value = com.COMDate;
-            cmd.Parameters.Add("@UTILCode", MySqlDbType.Int32).Value = com.UTILCode;
+            cmd.Parameters.Add("@UTILCode", MySqlDbType.VarChar).Value = com.UTILCode;
 
             try
             {
@@ -80,7 +80,7 @@ namespace Client_lourd___2022
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@COMRef", MySqlDbType.Int32).Value = id;
+            cmd.Parameters.Add("@COMRef", MySqlDbType.String).Value = id;
 
             try
             {

@@ -38,3 +38,6 @@ C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Cl
 C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client_lourd___2022.FormEmploye.resources
 C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client_lourd___2022.FormProduit.resources
 C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client_lourd___2022.FormCommande.resources
+C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client_lourd___2022.FormCommandeAjout.resources
+C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client_lourd___2022.FormEmployeAjout.resources
+C:\Users\wassi\source\repos\Client lourd - 2022\Client lourd - 2022\obj\Debug\Client_lourd___2022.FormProduitAjout.resources

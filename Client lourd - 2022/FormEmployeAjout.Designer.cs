@@ -32,7 +32,9 @@ namespace Client_lourd___2022
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbltext = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnEnregistrerPharmacie = new System.Windows.Forms.Button();
+            this.btnEnregistrerEmploye = new System.Windows.Forms.Button();
+            this.txtPharmacieEmploye = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtTelephoneEmploye = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtMailEmploye = new System.Windows.Forms.TextBox();
@@ -43,8 +45,6 @@ namespace Client_lourd___2022
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodeEmploye = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtPharmacieEmploye = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -73,7 +73,7 @@ namespace Client_lourd___2022
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.btnEnregistrerPharmacie);
+            this.panel2.Controls.Add(this.btnEnregistrerEmploye);
             this.panel2.Controls.Add(this.txtPharmacieEmploye);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.txtTelephoneEmploye);
@@ -91,19 +91,38 @@ namespace Client_lourd___2022
             this.panel2.Size = new System.Drawing.Size(411, 537);
             this.panel2.TabIndex = 2;
             // 
-            // btnEnregistrerPharmacie
+            // btnEnregistrerEmploye
             // 
-            this.btnEnregistrerPharmacie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
-            this.btnEnregistrerPharmacie.FlatAppearance.BorderSize = 0;
-            this.btnEnregistrerPharmacie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnregistrerPharmacie.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnregistrerPharmacie.ForeColor = System.Drawing.Color.White;
-            this.btnEnregistrerPharmacie.Location = new System.Drawing.Point(46, 479);
-            this.btnEnregistrerPharmacie.Name = "btnEnregistrerPharmacie";
-            this.btnEnregistrerPharmacie.Size = new System.Drawing.Size(121, 44);
-            this.btnEnregistrerPharmacie.TabIndex = 7;
-            this.btnEnregistrerPharmacie.Text = "Ajouter";
-            this.btnEnregistrerPharmacie.UseVisualStyleBackColor = false;
+            this.btnEnregistrerEmploye.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
+            this.btnEnregistrerEmploye.FlatAppearance.BorderSize = 0;
+            this.btnEnregistrerEmploye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnregistrerEmploye.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnregistrerEmploye.ForeColor = System.Drawing.Color.White;
+            this.btnEnregistrerEmploye.Location = new System.Drawing.Point(46, 479);
+            this.btnEnregistrerEmploye.Name = "btnEnregistrerEmploye";
+            this.btnEnregistrerEmploye.Size = new System.Drawing.Size(121, 44);
+            this.btnEnregistrerEmploye.TabIndex = 7;
+            this.btnEnregistrerEmploye.Text = "Ajouter";
+            this.btnEnregistrerEmploye.UseVisualStyleBackColor = false;
+            this.btnEnregistrerEmploye.Click += new System.EventHandler(this.btnEnregistrerEmploye_Click);
+            // 
+            // txtPharmacieEmploye
+            // 
+            this.txtPharmacieEmploye.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPharmacieEmploye.Location = new System.Drawing.Point(46, 419);
+            this.txtPharmacieEmploye.Name = "txtPharmacieEmploye";
+            this.txtPharmacieEmploye.Size = new System.Drawing.Size(279, 31);
+            this.txtPharmacieEmploye.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(42, 385);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(102, 25);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Pharmacie :";
             // 
             // txtTelephoneEmploye
             // 
@@ -195,24 +214,6 @@ namespace Client_lourd___2022
             this.label1.TabIndex = 2;
             this.label1.Text = "Code :";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(42, 385);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 25);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Pharmacie :";
-            // 
-            // txtPharmacieEmploye
-            // 
-            this.txtPharmacieEmploye.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPharmacieEmploye.Location = new System.Drawing.Point(46, 419);
-            this.txtPharmacieEmploye.Name = "txtPharmacieEmploye";
-            this.txtPharmacieEmploye.Size = new System.Drawing.Size(279, 31);
-            this.txtPharmacieEmploye.TabIndex = 6;
-            // 
             // FormEmployeAjout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -236,7 +237,7 @@ namespace Client_lourd___2022
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbltext;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnEnregistrerPharmacie;
+        private System.Windows.Forms.Button btnEnregistrerEmploye;
         private System.Windows.Forms.TextBox txtTelephoneEmploye;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtMailEmploye;
